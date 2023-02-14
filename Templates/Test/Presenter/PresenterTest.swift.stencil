@@ -5,6 +5,7 @@
 //  Created by {{ developer_name }} on {{ date }}.
 //
 
+@testable import {{ project_name }}
 import XCTest
 
 class {{ module_name }}PresenterTest: XCTestCase {
@@ -19,7 +20,7 @@ class {{ module_name }}PresenterTest: XCTestCase {
     }
 
     class MockInteractor: {{ module_name }}InteractorInput {
-
+        var sections = [CollectionViewSection]()
     }
 
     class MockRouter: {{ module_name }}RouterInput {

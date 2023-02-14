@@ -6,7 +6,7 @@
 //
 
 import CompositionalLayoutViewController
-import CompositionalLayoutViewControllerViperExtension
+import CompositionalLayoutViewControllerExtension
 import Foundation
 
 protocol {{ module_name }}InteractorInput: CollectionViewInteractorInput {

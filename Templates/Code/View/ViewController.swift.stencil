@@ -6,7 +6,7 @@
 //
 
 import CompositionalLayoutViewController
-import CompositionalLayoutViewControllerViperExtension
+import CompositionalLayoutViewControllerExtension
 import UIKit
 
 protocol {{ module_name }}ViewInput: CollectionViewInput {
@@ -28,6 +28,10 @@ final class {{ module_name }}ViewController: CompositionalLayoutViewController {
         super.viewDidLoad()
         provider = self
         presenter.viewDidLoad()
+    }
+
+    override func didSelectItem(at indexPath: IndexPath) {
+        presenter.didItemSelect(indexPath: indexPath)
     }
 
     // MARK: Other private methods

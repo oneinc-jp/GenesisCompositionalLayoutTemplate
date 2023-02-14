@@ -6,7 +6,8 @@
 //
 
 import CompositionalLayoutViewController
-import CompositionalLayoutViewControllerViperExtension
+import CompositionalLayoutViewControllerExtension
+import Foundation
 
 protocol {{ module_name }}PresenterInput: CollectionViewPresenterInput {
     // MARK: View Life-Cycle methods
@@ -40,7 +41,7 @@ extension {{ module_name }}Presenter: {{ module_name }}PresenterInput {
     }
 
     func viewDidLoad() {
-        // TODO: Implement if needed
+        view.update(sections: interactor.sections)
     }
 
     func section(for sectionIndex: Int) -> CollectionViewSection {
