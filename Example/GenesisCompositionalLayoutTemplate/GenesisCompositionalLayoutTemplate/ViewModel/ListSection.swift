@@ -1,5 +1,5 @@
 //
-//  ExampleSection.swift
+//  ListSection.swift
 //  GenesisCompositionalLayoutTemplate
 //
 //  Created by Akira Matsuda on 2023/02/11.

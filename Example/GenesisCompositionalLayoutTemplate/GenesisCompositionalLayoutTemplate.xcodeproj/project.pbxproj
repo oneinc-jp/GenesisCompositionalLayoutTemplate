@@ -24,7 +24,7 @@
 		E99207D52997A1B1001168C7 /* ExampleModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99207D12997A1B1001168C7 /* ExampleModuleRouter.swift */; };
 		E99207D82997A20D001168C7 /* CompositionalLayoutViewController in Frameworks */ = {isa = PBXBuildFile; productRef = E99207D72997A20D001168C7 /* CompositionalLayoutViewController */; };
 		E99207DB2997A223001168C7 /* CompositionalLayoutViewControllerExtension in Frameworks */ = {isa = PBXBuildFile; productRef = E99207DA2997A223001168C7 /* CompositionalLayoutViewControllerExtension */; };
-		E99207DE2997A467001168C7 /* ExampleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99207DD2997A467001168C7 /* ExampleSection.swift */; };
+		E99207DE2997A467001168C7 /* ListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99207DD2997A467001168C7 /* ListSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		E99207CD2997A1B1001168C7 /* ExampleModuleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleModuleViewController.swift; sourceTree = "<group>"; };
 		E99207CF2997A1B1001168C7 /* ExampleModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleModuleInteractor.swift; sourceTree = "<group>"; };
 		E99207D12997A1B1001168C7 /* ExampleModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleModuleRouter.swift; sourceTree = "<group>"; };
-		E99207DD2997A467001168C7 /* ExampleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSection.swift; sourceTree = "<group>"; };
+		E99207DD2997A467001168C7 /* ListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +227,7 @@
 		E99207DC2997A45E001168C7 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				E99207DD2997A467001168C7 /* ExampleSection.swift */,
+				E99207DD2997A467001168C7 /* ListSection.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -341,7 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E99207DE2997A467001168C7 /* ExampleSection.swift in Sources */,
+				E99207DE2997A467001168C7 /* ListSection.swift in Sources */,
 				E99207D32997A1B1001168C7 /* ExampleModuleViewController.swift in Sources */,
 				E99207D42997A1B1001168C7 /* ExampleModuleInteractor.swift in Sources */,
 				E99207D52997A1B1001168C7 /* ExampleModuleRouter.swift in Sources */,
