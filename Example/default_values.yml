@@ -1,0 +1,4 @@
+developer_name: Akira Matsuda
+project_name: GenesisCompositionalLayoutTemplate
+output_path: ./GenesisCompositionalLayoutTemplate/GenesisCompositionalLayoutTemplateTests/Module
+test_output_path: ./GenesisCompositionalLayoutTemplate/GenesisCompositionalLayoutTemplateTests/Module
