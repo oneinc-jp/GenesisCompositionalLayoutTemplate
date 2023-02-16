@@ -9,9 +9,13 @@ import CompositionalLayoutViewController
 import CompositionalLayoutViewControllerExtension
 import UIKit
 
+// MARK: - ExampleModuleViewInput
+
 protocol ExampleModuleViewInput: CollectionViewInput {
     // MARK: Callback from presenter
 }
+
+// MARK: - ExampleModuleViewController
 
 final class ExampleModuleViewController: CompositionalLayoutViewController {
     // MARK: Stored instance properties
@@ -33,11 +37,15 @@ final class ExampleModuleViewController: CompositionalLayoutViewController {
     // MARK: Other private methods
 }
 
+// MARK: SectionProvider
+
 extension ExampleModuleViewController: SectionProvider {
     var sections: [CollectionViewSection] {
         return presenter.sections
     }
 }
+
+// MARK: ExampleModuleViewInput
 
 extension ExampleModuleViewController: ExampleModuleViewInput {
     func update(sections: [CollectionViewSection]) {
