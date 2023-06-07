@@ -9,6 +9,7 @@ import CompositionalLayoutViewController
 import CompositionalLayoutViewControllerExtension
 import Foundation
 
+@MainActor
 protocol {{ module_name }}PresenterInput: CollectionViewPresenterInput {
     // MARK: View Life-Cycle methods
 
