@@ -10,7 +10,7 @@ import CompositionalLayoutViewControllerExtension
 import Foundation
 
 protocol {{ module_name }}InteractorInput: CollectionViewInteractorInput {
-    // MARK: Methods for modifying repository
+    // MARK: Methods called from presenter
 }
 
 protocol {{ module_name }}InteractorOutput: AnyObject {
@@ -21,13 +21,8 @@ final class {{ module_name }}Interactor {
     // MARK: VIPER property
     weak var presenter: {{ module_name }}InteractorOutput!
 
-    // MARK: Stored instance properties
     var sections: [CollectionViewSection] = []
 
-    // MARK: Computed instance properties
-
-    // MARK: Initializer
-    
     init() {}
 
     // MARK: Other private methods
