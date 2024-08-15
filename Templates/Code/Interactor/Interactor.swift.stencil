@@ -18,14 +18,31 @@ protocol {{ module_name }}InteractorOutput: AnyObject {
 }
 
 final class {{ module_name }}Interactor {
-    // MARK: VIPER property
-    weak var presenter: {{ module_name }}InteractorOutput!
 
-    var sections: [CollectionViewSection] = []
+    // MARK: Lifecycle
 
     init() {}
 
-    // MARK: Other private methods
+    // MARK: Internal
+
+    // MARK: Internal Stored instance properties
+
+    weak var presenter: {{ module_name }}InteractorOutput!
+    var sections: [CollectionViewSection] = []
+
+    // MARK: Internal Computed instance properties
+
+    // MARK: Internal methods
+
+    // MARK: Private
+
+    // MARK: Private Stored instance properties
+
+    // MARK: Private Computed instance properties
+
+    // MARK: Private methods
+
+    // MARK: Private
 }
 
 extension {{ module_name }}Interactor: {{ module_name }}InteractorInput {}

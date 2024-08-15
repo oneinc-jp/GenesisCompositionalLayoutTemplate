@@ -14,19 +14,16 @@ protocol {{ module_name }}RouterInput: AnyObject {
 
 @MainActor
 final class {{ module_name }}Router {
-    private unowned let viewController: {{ module_name }}ViewController
+    // MARK: Lifecycle
 
     init(viewController: {{ module_name }}ViewController) {
         self.viewController = viewController
     }
 
+    // MARK: Internal
+
     static func assembleModule() -> {{ module_name }}ViewController {
         let view = {{ module_name }}ViewController()
-        // TODO: Create a Storyboard with the same name as "{{ module_name }}".
-        // TODO: And Change "{{ module_name }}" of "R.storyboard.{{ module_name }}" to lowercase.
-        // guard let view = R.storyboard.{{ module_name }}.instantiateInitialViewController() else {
-        //     fatalError("Fail to load {{ module_name }}ViewController from Storyboard.")
-        // }
         let interactor = {{ module_name }}Interactor()
         let router = {{ module_name }}Router(viewController: view)
         let presenter = {{ module_name }}Presenter(view: view, interactor: interactor, router: router)
@@ -36,6 +33,10 @@ final class {{ module_name }}Router {
 
         return view
     }
+
+    // MARK: Private
+
+    private unowned let viewController: {{ module_name }}ViewController
 }
 
 extension {{ module_name }}Router: {{ module_name }}RouterInput {}
